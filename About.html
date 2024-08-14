@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Logoo.png" class="logo" type="image/x-icon">
+    <title>About Us</title>
+</head>
+<body>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="SelfcareHaven.html"><b>Home</b></a>
+        <a href="About.html"><b>About Us</b></a>
+        <a href="https://form.jotform.com/242251437008550"><b>Contact Us</b></a>
+        <a href="guest.html"><b>Log out</b></a>
+      </div>
+      <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+        
+    <h1>About Us</h1>
+<h3>We are five teenagers — Ali, Omar, Yassin, Mariam, and Malak — who share the same interests in programming, design, and expanding our knowledge about mental health and self-care. <br>
+    We decided to share our knowledge by creating a simple website that offers effective solutions for various mental health and self-care challenges. <br>
+    Our goal is to raise awareness about mental self-care, boost self-confidence for those who have experienced trauma, and help them take the first step towards a healthier and more fulfilling life.</h3>
+
+    <img src="png.png" class="png">
+
+</body>
+</html>
+
+<style>
+    body {
+        background-image: url(aboutus.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 80px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(0, 89, 212);
+    border-radius: 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+}
+
+li {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li:hover {
+    color:rgb(63, 208, 224);
+    transition: 0.4s;
+}
+ 
+.logoz {
+    height: 100px;
+    width: 100px;
+}
+
+.png {
+    width: 300px;
+    height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Mn hena styling el menu */
+
+.sidepanel {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #4e4e4e37; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s; 
+ }
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+  font-family: bold;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 24px;
+  font-family: cursive;
+  cursor: pointer;
+  background-color: #00000011;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+</style>
